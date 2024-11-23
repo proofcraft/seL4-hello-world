@@ -1,6 +1,12 @@
-[submodule "tools"]
-	path = tools
+[submodule "kernel"]
+	path = kernel
+	url = git@github.com:seL4/seL4.git
+[submodule "tools/seL4"]
+	path = tools/seL4
 	url = git@github.com:seL4/seL4_tools.git
+[submodule "tools/nanopb"]
+	path = tools/nanopb
+	url = git@github.com:nanopb/nanopb.git
 [submodule "projects/seL4_libs"]
 	path = projects/seL4_libs
 	url = git@github.com:seL4/seL4_libs.git
@@ -13,6 +19,15 @@
 [submodule "projects/sel4runtime"]
 	path = projects/sel4runtime
 	url = git@github.com:seL4/sel4runtime.git
-[submodule "kernel"]
-	path = kernel
-	url = git@github.com:seL4/seL4.git
+[submodule "projects/sel4_projects_libs"]
+	path = projects/sel4_projects_libs
+	url = git@github.com:seL4/sel4_projects_libs.git
+[submodule "projects/projects_libs"]
+	path = projects/projects_libs
+	url = git@github.com:seL4/projects_libs.git
+[submodule "projects/sel4test"]
+	path = projects/sel4test
+	url = git@github.com:seL4/sel4test.git
+[submodule "projects/sel4bench"]
+	path = projects/sel4bench
+	url = git@github.com:seL4/sel4bench.git

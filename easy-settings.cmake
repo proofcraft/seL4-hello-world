@@ -1,1 +1,0 @@
-projects/hello/easy-settings.cmake
