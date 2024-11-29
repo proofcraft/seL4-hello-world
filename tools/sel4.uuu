@@ -1,0 +1,29 @@
+uuu_version 1.5.182
+
+# Arguments for uuu script:
+# @_spl 	[imx-boot-imx93evk-sd.bin-flash_singleboot]	| SPL boot image
+# @_image	[sel4_image]					| seL4 image
+# @_linux	[Image]						| Linux kernel image
+# @_dtb		[dtb]						| Device Tree Blob
+
+# This worked for ./uuu uuu.auto-imx93-11x11-lpddr4x-evk
+#SDPS: boot -f imx-boot-imx93evk-sd.bin-flash_singleboot
+SDPS: boot -f _spl
+
+# After this we can use U-Boot commands:
+
+#FB: ucmd echo --------------- ENV -------------
+#FB: ucmd printenv
+#FB: ucmd echo --------------- END ENV -------------
+
+FB: ucmd echo Board Info:
+FB: ucmd bdinfo
+
+FB: ucmd echo Loading seL4 image _image
+FB: ucmd setenv fastboot_buffer ${loadaddr}
+FB: download -f _image
+
+FB: ucmd echo Starting Elfloader at ${loadaddr}
+FB: acmd go ${loadaddr}
+FB: done
+
