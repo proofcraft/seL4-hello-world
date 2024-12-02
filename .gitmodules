@@ -1,9 +1,9 @@
 [submodule "kernel"]
 	path = kernel
-	url = git@github.com:Indanz/seL4
+	url = git@github.com:seL4/seL4
 [submodule "tools/seL4"]
 	path = tools/seL4
-	url = git@github.com:Indanz/seL4_tools.git
+	url = git@github.com:seL4/seL4_tools.git
 [submodule "tools/nanopb"]
 	path = tools/nanopb
 	url = git@github.com:nanopb/nanopb.git
@@ -15,7 +15,7 @@
 	url = git@github.com:seL4/musllibc.git
 [submodule "projects/util_libs"]
 	path = projects/util_libs
-	url = git@github.com:Indanz/util_libs.git
+	url = git@github.com:seL4/util_libs.git
 [submodule "projects/sel4runtime"]
 	path = projects/sel4runtime
 	url = git@github.com:seL4/sel4runtime.git
@@ -30,4 +30,4 @@
 	url = git@github.com:seL4/sel4test.git
 [submodule "projects/sel4bench"]
 	path = projects/sel4bench
-	url = git@github.com:Indanz/sel4bench.git
+	url = git@github.com:seL4/sel4bench.git
